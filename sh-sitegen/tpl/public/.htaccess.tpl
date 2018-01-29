@@ -12,10 +12,10 @@ ServerSignature Off
 Options -Indexes
 
 # Password protection
-#AuthUserFile "{{ htpasswd }}"
-#AuthType Basic
-#AuthName "Authorization required"
-#require valid-user
+AuthUserFile "{{ htpasswd }}"
+AuthType Basic
+AuthName "Authorization required"
+require valid-user
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
